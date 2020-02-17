@@ -1,6 +1,8 @@
 name: Docker Image CI
 
 on: [push]
+env:
+  DOCKER_IMAGE_NAME: sitapati/camunda-cloud-demo-json-api
 
 jobs:
   publish_docker:
@@ -11,7 +13,7 @@ jobs:
       - name: Publish Docker image to Registry
         uses: elgohr/Publish-Docker-Github-Action@2.12
         with:
-          name: sitapati/camunda-cloud-demo-json-api
+          name: ${{ env.DOCKER_IMAGE_NAME }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
