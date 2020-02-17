@@ -9,9 +9,8 @@ services:
       - VIRTUAL_HOST=json-api.joshwulf.com
       - LETSENCRYPT_HOST=json-api.joshwulf.com
       - LETSENCRYPT_EMAIL=josh@magikcraft.io
-    ports:
-      - '8080:3000'
   # This is the network for the nginx proxy
+  # See https://github.com/jwulf/letsencrypt-nginx-sidecar
 networks:
   default:
     external:
