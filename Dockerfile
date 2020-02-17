@@ -14,6 +14,7 @@ RUN chown node:node .
 USER node
 COPY package*.json ./
 RUN npm install --only=production && echo "{}" > config.json
+RUN npm i -g rimraf
 COPY --from=builder /usr/src/app/dist/ dist/
 EXPOSE 3000
 ENTRYPOINT [ "/sbin/tini","--", "node", "dist/main" ]
