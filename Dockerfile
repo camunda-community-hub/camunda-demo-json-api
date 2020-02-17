@@ -2,7 +2,6 @@ FROM node:12.13-alpine AS builder
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --only=development
-RUN npm i -g rimraf
 COPY tsconfig*.json ./
 COPY src src
 RUN npm run build
