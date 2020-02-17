@@ -15,4 +15,8 @@ describe('Time Controller', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  it('should return a JSON time object', () => {
+    expect(typeof controller.getTime().time).toBe('string');
+  });
 });
