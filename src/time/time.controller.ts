@@ -6,14 +6,13 @@ export class TimeController {
   getTime() {
     const date = new Date();
     return {
-      string: date.toString(),
-      hour: date.getHours(),
-      minute: date.getMinutes(),
-      second: date.getSeconds(),
-      day: date.getDay(),
-      month: date.getMonth(),
-      year: date.getFullYear(),
-      time: date.getTime(),
+      time: date.toUTCString(),
+      hour: date.getUTCHours(),
+      minute: date.getUTCMinutes(),
+      second: date.getUTCSeconds(),
+      day: date.getUTCDay(),
+      month: date.getUTCMonth(),
+      year: date.getUTCFullYear(),
     };
   }
 }
