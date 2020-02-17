@@ -7,6 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(port);
 
-  this.log(`JSON API listening on port ${port}...`);
+  // tslint:disable-next-line: no-console
+  console.log(`JSON API listening on port ${port}...`);
 }
 bootstrap();
