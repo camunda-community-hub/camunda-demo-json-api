@@ -5,4 +5,4 @@ services:
     image: sitapati/camunda-cloud-demo-json-api:latest
     container_name: demo-json-api
     ports:
-      - '8080:3000'
+      - '3000:3000'

@@ -20,4 +20,4 @@ You can run it using the included `docker-compose.yml` file:
 docker-compose up
 ```
 
-Then point your web browser to [http://localhost:8080/time](http://localhost:8080/time).
+Then point your web browser to [http://localhost:3000/time](http://localhost:3000/time).

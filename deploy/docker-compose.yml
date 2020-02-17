@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  json_api:
+    image: sitapati/camunda-cloud-demo-json-api:latest
+    container_name: demo-json-api
+    environment:
+      - VIRTUAL_PORT=3000
+      - VIRTUAL_HOST=json-api.joshwulf.com
+      - LETSENCRYPT_HOST=json-api.joshwulf.com
+      - LETSENCRYPT_EMAIL=josh@magikcraft.io
+    ports:
+      - '8080:3000'
+  # This is the network for the nginx proxy
+networks:
+  default:
+    external:
+      name: letsencrypt
