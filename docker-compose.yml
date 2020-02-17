@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  json_api:
+    image: sitapati/camunda-cloud-demo-json-api:latest
+    container_name: camunda-cloud-demo-json-api
+    ports:
+      - '8080:3000'
