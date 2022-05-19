@@ -9,9 +9,9 @@
 
 ![Docker Image CI](https://github.com/jwulf/camunda-cloud-demo-json-api/workflows/Docker%20Image%20CI/badge.svg)
 
-This is a demo JSON API for [Camunda 8 SaaS](https://camunda.io) [Getting Started](https://github.com/jwulf/camunda-cloud-starter) examples.
+This is a demo JSON API for [Camunda 8 SaaS](https://camunda.io) Getting Started examples.
 
-It's a NestJS application that exposes some endpoints that return JSON data for the Camunda HTTP Worker.
+It's a NestJS application that exposes some endpoints that return JSON data for the [Camunda 8 REST connector](https://docs.camunda.io/docs/components/modeler/web-modeler/connectors/available-connectors/rest/).
 
 ## Docker
 
